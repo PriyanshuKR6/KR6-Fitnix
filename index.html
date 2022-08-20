@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>KR6 Fitnix</title>
+</head>
+<style>
+    body {
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        padding: 0px;
+        background-image: url("img/bg.jpg");
+        background-size: 1920px 1080px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 40px;
+    }
+
+    .left img {
+        width: 125px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(0, 255, 42); */
+        display: block;
+        width: 33%;
+        margin: 15px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(4, 0, 255); */
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 25px 18px;
+    }
+
+    .navbar li a:hover {
+        color: rgba(146, 134, 134, 0.575);
+        text-decoration: underline;
+
+    }
+
+    .right #search {
+        float: right;
+        padding: 10px 30px;
+    }
+
+    .material-symbols-outlined {
+        width: 45px;
+        height: 35px;
+        padding-left: 5px;
+    }
+
+    .container {
+        /* border: 2px solid yellow; */
+        border-radius: 10px;
+        margin: 100px 15px;
+        padding: 50px;
+        font-size: 12px;
+        width: 33%
+    }
+
+    .form-group {
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+    }
+
+    .form-group input {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        padding: 5px;
+        display: inline-block;
+        border: 2px solid grey;
+        width: 30%;
+    }
+
+    .form-group fieldset {
+        width: 40%;
+    }
+
+    input[type="submit"] {
+        background-color: goldenrod;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 25%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: darkorange;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>
+                KR6 Fitnix
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="search">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+                <input type="text" name="search" id="search" placeholder="Search this website">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join NCR's Best GYM</h1>
+        <form action="">
+            <div class="form-group">
+                <h4><b>Required fields are marked with *</b></h4>
+                <h3>Personal Information</h3>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <fieldset>
+                    <legend>Gender *</legend>
+                    <p>
+                        Male <input type="radio" name="gender" id="male" required>
+                        Female <input type="radio" name="gender" id="female" required>
+                    </p>
+                </fieldset>
+                <P><input type="number" name="number" placeholder="Contact no." min="10" max="10" required></P>
+                <p><input type="email" name="email" id="email" placeholder="Ex: kr6.priyanshu@gmail.com" required></p>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
